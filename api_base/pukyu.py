@@ -4,7 +4,7 @@ import uvicorn
 
 
 # Asumimos que tienes un objeto 'qa' ya configurado
-from rag import rag_with_llama2 as qa
+from rag import rag_with_llama2
 
 app = FastAPI()
 
@@ -14,11 +14,10 @@ class Query(BaseModel):
 class Answer(BaseModel):
     answer: str
 
-@app.post("/query", response_model=Answer)
+@app.post("/query")
 async def query(query: Query):
     try:
-        # Asumimos que 'qa' tiene un método 'run' que toma una pregunta y devuelve una respuesta
-        result = qa.run(query.question)
+        result = rag_with_llama2(query.question)
         return Answer(answer=result)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

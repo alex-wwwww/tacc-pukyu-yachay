@@ -1,4 +1,11 @@
 venv/
 .env
+api_base/downloaded_model/
+api_base/meta-llama/
+api_base/results/
+api_base/__pycache__/
 rag_base/pretrained_model/
+rag_base/downloaded_model/
+rag_base/meta-llama/
+api_base/rag.log
 .vscode/
