@@ -1,2 +1,3 @@
 venv/
 .env
+rag_base/pretrained_model/
