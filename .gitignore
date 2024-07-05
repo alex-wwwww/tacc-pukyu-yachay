@@ -1,4 +1,5 @@
 venv/
 .env
 rag_base/pretrained_model/
+rag_base/pretrained_model/
 .vscode/
