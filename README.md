@@ -1,1 +1,4 @@
 # tacc-pukyu-yachay
+This repository contains the proposed solution found in the paper "Cooking Guidance: Integrating RAG Methodology
+into a Quechua NLP Recipe Consultant". Download attached paper for more details.
+Abstract— This paper introduces a novel approach to cooking guidance in Southern Quechua, a resource-scarce language spoken primarily in Peru through the integration of a Natural Language Processing (NLP) based tool such as Retrieval-Augmented Generation. We discuss the design considerations for the corpus extraction and implementation details covering the solution training and the deployment of the web service via an API.
